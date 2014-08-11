@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CustomView</string>
+    <string name="hello_world">Hello world!</string>
+ 	<string name="lower_bound">Start</string>
+ 	<string name="upper_bound">Goal</string>
+ 	<string name="animate_button">Animate !</string>
+</resources>

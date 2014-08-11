@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editTextCurrentNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/lower_bound"
+        android:inputType="number" 
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/editTextGoalNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/upper_bound"
+        android:inputType="number" 
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/animate_button" 
+        android:layout_weight="1"/>
+
+    <com.example.customview.DrawingTheCircle
+        android:id="@+id/circular_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_weight="4"
+        android:background="@color/bg_color"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        custom:bgColor="@color/black"
+        custom:bgStrokeWidth="2dp"
+        custom:diameter="48dp"
+        custom:max="100"
+        custom:progressColor="@color/green"
+        custom:progressStrokeWidth="4dp" />
+
+</LinearLayout>
